@@ -1,0 +1,23 @@
+{
+    "prolog.executablePath": "gprolog",
+    "prolog.linter.run": "never",
+
+    "code-runner.executorMap": {
+        "prolog": "gprolog --consult-file $fileName --query-goal \"main, halt\""
+    },
+    "code-runner.executorMapByFileExtension": {
+        ".pl": "gprolog --consult-file $fileName --query-goal \"main, halt\""
+    },
+    "code-runner.languageIdToFileExtensionMap": {
+        "prolog": ".pl"
+    },
+    "code-runner.fileDirectoryAsCwd": true,
+    "code-runner.runInTerminal": false,
+    "code-runner.clearPreviousOutput": true,
+
+    "files.associations": {
+        "*.pl": "prolog"
+    }
+
+    
+}
