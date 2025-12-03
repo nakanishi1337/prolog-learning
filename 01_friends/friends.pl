@@ -7,13 +7,8 @@ friend(X, Y) :-
     likes(X, Z),
     likes(Y, Z).
 
-query(Q) :-
-    (   call(Q)
-    ->  write(Q), write(': yes'), nl
-    ;   write(Q), write(': no'), nl
-    ).
 
-main :-
-    query(friend(wallace, wallace)),
-    query(friend(wallace, grommit)),
-    query(friend(wallace, wendolene)).
+% 質問例
+% friend(wallace, wallace).
+% friend(wallace, grommit).
+% friend(wallace, wendolene).

@@ -3,16 +3,16 @@
     "prolog.linter.run": "never",
 
     "code-runner.executorMap": {
-        "prolog": "gprolog --consult-file $fileName --query-goal \"main, halt\""
+    "prolog": "gprolog --consult-file $fileName"
     },
     "code-runner.executorMapByFileExtension": {
-        ".pl": "gprolog --consult-file $fileName --query-goal \"main, halt\""
+        ".pl": "gprolog --consult-file $fileName"
     },
     "code-runner.languageIdToFileExtensionMap": {
         "prolog": ".pl"
     },
     "code-runner.fileDirectoryAsCwd": true,
-    "code-runner.runInTerminal": false,
+    "code-runner.runInTerminal": true,
     "code-runner.clearPreviousOutput": true,
 
     "files.associations": {
