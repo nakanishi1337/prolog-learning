@@ -13,3 +13,25 @@ average(Average, List) :- sum(Sum, List), count(Count, List), Average is Sum / C
 % ? - sum(What, [1,2,3,4]).
 
 % ?- average(What, [1,2,3,4]).
+
+
+fibonacci(0, 0).
+fibonacci(1, 1).
+fibonacci(Result, N) :-
+    N > 1,
+    N1 is N - 1,
+    N2 is N - 2,
+    fibonacci(Result1, N1),
+    fibonacci(Result2, N2), 
+    Result is Result1 + Result2.
+
+% ?- fibonacci(What, 20).
+
+factorial(1, 1).
+factorial(Result, N) :-
+    N > 0,
+    N1 is N - 1,
+    factorial(Result1, N1),
+    Result is N * Result1.
+
+% ?- factorial(What, 5).
